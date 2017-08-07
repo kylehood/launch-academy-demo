@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "74f381ee-356a-455c-9487-36b308c22187",
+    "firstName": "John",
+    "lastName": "Doe",
+    "about": "The first member therefore the best!",
+    "team": "05837a9d-d5f8-448d-b5b8-c6ee3c126c49",
+    "favoriteColor": "#000000",
+    "favoriteQuote": "I don't always test my code but when I do I do it in production.",
+    "favoriteXKCDLink": "https://imgs.xkcd.com/comics/exploits_of_a_mom.png"
+  }
+]

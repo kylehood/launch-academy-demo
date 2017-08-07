@@ -1,0 +1,10 @@
+{
+  "name": "launch-academy-demo-server",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "launch-academy-demo",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "client": "node start-client.js",
+    "server": "node server/index.js",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  }
+}
