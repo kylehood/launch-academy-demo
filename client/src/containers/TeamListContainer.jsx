@@ -1,5 +1,6 @@
 import React from 'react';
 import 'isomorphic-fetch';
+import { withRouter, matchPath } from 'react-router';
 import TeamSelector from '../components/TeamSelector';
 
 class TeamListContainer extends React.Component {
@@ -26,19 +27,31 @@ class TeamListContainer extends React.Component {
 	}
 
 	selectTeam(teamId) {
-		this.props.history.push(`/teams/${teamId}`);
+		if (teamId) {
+			this.props.history.push(`/teams/${teamId}`);
+		} else {
+			this.props.history.push('/');
+		}
 	}
 
 	render() {
+		// we need the teamId in the url, but this isn't a route
+		// use withRouter to connect to context and matchPath to parse the url
+		const match = matchPath(this.props.location.pathname, {
+			path: '/teams/:teamId',
+			exact: true,
+			strict: false
+		});
+
 		return (
 			<TeamSelector
 				teams={ this.state.teams }
 				callback={ this.selectTeam }
-				active={ this.props.match.params.teamId }
+				active={ match && match.params.teamId }
 			/>
 		);
 	}
 }
 
-export default TeamListContainer;
+export default withRouter(TeamListContainer);
 
