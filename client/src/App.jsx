@@ -1,11 +1,11 @@
-import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import './App.css';
 
 import MembersContainer from './containers/MembersContainer';
 import TeamListContainer from './containers/TeamListContainer';
 
-class App extends React.Component {
+class App extends Component {
     render() {
         return (
             <div className="App">
