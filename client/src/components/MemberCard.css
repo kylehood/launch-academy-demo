@@ -29,10 +29,6 @@
     /* border-color: see component */
 }
 
-.MemberCard .comic {
-    width: 100%;
-}
-
 .MemberCard .contact {
     color: #ffffff;
     text-decoration: none;
@@ -43,9 +39,6 @@
 }
 
 .MemberCard .contact:hover {
+    /* bg color is set programatically but this will lighten it on hover */
     filter: brightness(105%);
 }
-
-
-
-

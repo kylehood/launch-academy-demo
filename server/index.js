@@ -10,7 +10,7 @@ application.use(function(req, res, next) {
 });
 
 application.use(function(req, res, next) {
-	// simulate some latency
+    // simulate some latency
     setTimeout(next, 500);
 });
 

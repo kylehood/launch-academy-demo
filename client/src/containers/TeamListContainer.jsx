@@ -14,6 +14,7 @@ class TeamListContainer extends React.Component {
 
 	componentDidMount() {
 		const self = this;
+		this.setState({ loaded: false });
 		fetch(`http://localhost:3001/api/teams`)
 			.then(res => res.json())
 			.then(teams => {
