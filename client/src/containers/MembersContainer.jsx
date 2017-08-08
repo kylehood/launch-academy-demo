@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import 'isomorphic-fetch';
 import LoadingIndicator from '../components/LoadingIndicator';
-import MemberCard from '../components/MemberCard';
 
 class MembersContainer extends React.Component {
 	static propTypes = {
@@ -23,12 +22,14 @@ class MembersContainer extends React.Component {
 	}
 
 	componentWillReceiveProps(nextProps) {
+		// if the team id changed, fetch new team
 		if (nextProps.match.params.teamId !== this.props.match.params.teamId) {
 			this.fetchMembers(nextProps.match.params.teamId);
 		}
 	}
 
 	fetchMembers(team) {
+		// https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 		const self = this;
 		this.setState({ loaded: false });
 		fetch(`http://localhost:3001/api/teams/${team}/members`)
@@ -54,7 +55,9 @@ class MembersContainer extends React.Component {
 			<div>
 				{
 					this.state.members.map(member => (
-						<MemberCard key={ member._id } member={ member }/>
+						<div key={ member._id }>
+							{ member.firstName} { member.lastName }
+						</div>
 					))
 				}
 			</div>
