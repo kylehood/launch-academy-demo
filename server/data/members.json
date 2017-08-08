@@ -1,12 +1,50 @@
 [
   {
     "_id": "74f381ee-356a-455c-9487-36b308c22187",
-    "firstName": "John",
-    "lastName": "Doe",
-    "about": "The first member therefore the best!",
+    "firstName": "James",
+    "lastName": "Archer",
+    "jobTitle": "Project Manager",
+    "image": "https://randomuser.me/api/portraits/men/83.jpg",
+    "about": "When nothing is going right, go left.",
     "team": "05837a9d-d5f8-448d-b5b8-c6ee3c126c49",
-    "favoriteColor": "#000000",
-    "favoriteQuote": "I don't always test my code but when I do I do it in production.",
+    "favoriteColor": "#01B3F0",
+    "email": "fake@dmail.com",
+    "favoriteXKCDLink": "https://imgs.xkcd.com/comics/exploits_of_a_mom.png"
+  },
+  {
+    "_id": "74f381ee-356a-455c-9487-36b308c22186",
+    "firstName": "Beth",
+    "lastName": "Hudson",
+    "jobTitle": "Software Engineer",
+    "image": "https://randomuser.me/api/portraits/women/3.jpg",
+    "about": "I don't always test my code but when I do I do it in production.",
+    "team": "05837a9d-d5f8-448d-b5b8-c6ee3c126c49",
+    "favoriteColor": "#8CC240",
+    "email": "fake@dmail.com",
+    "favoriteXKCDLink": "https://imgs.xkcd.com/comics/exploits_of_a_mom.png"
+  },
+  {
+    "_id": "74f381ee-356a-455c-9487-36b308c22184",
+    "firstName": "Christina",
+    "lastName": "Nguyen",
+    "jobTitle": "Software Engineer",
+    "image": "https://randomuser.me/api/portraits/women/27.jpg",
+    "about": "I'm against picketing, but I don't know how to show it...",
+    "team": "05837a9d-d5f8-448d-b5b8-c6ee3c126c49",
+    "favoriteColor": "#F6A719",
+    "email": "fake@dmail.com",
+    "favoriteXKCDLink": "https://imgs.xkcd.com/comics/exploits_of_a_mom.png"
+  },
+  {
+    "_id": "74f381ee-356a-455c-9487-36b308c22185",
+    "firstName": "Jessie",
+    "lastName": "Clinton",
+    "jobTitle": "Test Engineer",
+    "image": "https://randomuser.me/api/portraits/men/43.jpg",
+    "about": "Who ate my lunch?",
+    "team": "05837a9d-d5f8-448d-b5b8-c6ee3c126c49",
+    "favoriteColor": "#F14834",
+    "email": "fake@dmail.com",
     "favoriteXKCDLink": "https://imgs.xkcd.com/comics/exploits_of_a_mom.png"
   }
 ]
