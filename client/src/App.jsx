@@ -9,7 +9,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-				<Route path="/teams" component={ TeamListContainer } />
+				<TeamListContainer />
 				<Route path="/teams/:teamId" component={ MembersContainer } />
             </div>
         );
