@@ -1,13 +1,13 @@
 [
   {
     "_id": "05837a9d-d5f8-448d-b5b8-c6ee3c126c49",
-    "name": "Team 1",
+    "name": "Data Team",
     "description": "The first and therefore the best!",
     "logo": "https://facebook.github.io/react/img/logo.svg"
   },
   {
     "_id": "e73edb63-cbad-4347-9193-6a108b2aaee1",
-    "name": "Team 2",
+    "name": "Applications Team",
     "description": "We learned from Team 1's mistakes!",
     "logo": "https://facebook.github.io/react/img/logo.svg"
   }

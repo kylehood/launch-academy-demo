@@ -3,8 +3,19 @@ const application = express();
 const _teams = require('./data/teams.json');
 const _members = require('./data/members.json');
 
+application.use(function(req, res, next) {
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Headers", "X-Requested-With");
+	next();
+});
+
+application.use(function(req, res, next) {
+	// simulate some latency
+    setTimeout(next, 500);
+});
+
 application.get('/api/teams', (request, response) => {
-    response.send(teams);
+    response.send(_teams);
 });
 
 application.get('/api/teams/:teamId', (request, response) => {
